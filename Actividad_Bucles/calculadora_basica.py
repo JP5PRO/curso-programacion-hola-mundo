@@ -37,3 +37,8 @@ while True:
                 print(f"El resultado de la división es: {resultado}")
         case _:
             print("Opción inválida. Por favor, seleccione una opción válida.")
+    salir = input("¿Desea continuar? (s/n): ").lower()
+    if salir == "n":
+        print("Saliendo de la calculadora...")
+        break
+    
