@@ -4,13 +4,13 @@ def main():
     contador = 0
     while True:
         try:
-            entrada = input("Ingresa una palabra o número (Con espacio terminas): ")
-            if entrada == " ":
+            cadena = input("Ingresa una palabra o número (Con espacio terminas): ")
+            if cadena == " ":
                 break
             else:
-                if entrada.isdigit():
-                    entrada = str(entrada)
-                print(entrada.upper())
+                if cadena.isdigit():
+                    cadena = str(cadena)
+                print(cadena.upper())
                 contador += 1
         except Exception as e:
             print("ERROR: ", e)
